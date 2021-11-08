@@ -1,0 +1,65 @@
+*,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background: url("/image/background.png");
+    background-size:     cover;                      /* <------ */
+    background-position: center bottom;
+    height: 1000px;
+    max-height: 100vh;
+}
+.wrapper{
+    margin: 0 2.5vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 2.5vw;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo >a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.navIn{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navButton{
+    margin-right: 2vw;
+    color: black;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    font-size: small;
+}
+
+.height100{
+    height: 100vh;
+    background: black;
+}
+
+footer{
+    display: flex;
+}
+.navInFooter{
+    display: flex;
+    flex-direction: column;
+}

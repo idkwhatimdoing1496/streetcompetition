@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/image/favicon.png" type="image">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 500px) {
+            .hamburgerMenu{
+                position: fixed;
+                z-index: 100;
+                top: 5vw;
+                right: 5vw;
+                cursor: pointer;
+            }
+            .closeIcon{
+                display: none;
+            }
+            #header{
+                flex-direction: column;
+            }
+            .navIn{
+                flex-direction: column;
+                text-align: center;
+                position: fixed;
+                transform: translateY(-100%);
+                transition: translateY 0.2s;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 99;
+                padding-top: 4rem;
+                background: white;
+            }
+            .nav{
+                height: 100vh;
+            }
+            .navButton{
+                font-size: 5vw;
+            }
+            .showMenu{
+                display: none;
+            }
+        }
+    </style>
+</head>
+    <body>
+        <div class="background">
+            <header id="header">
+                <div class="logo">
+                    <a href="">Street<br>Comp.</a>
+                </div>
+                <nav>
+                    <ul class="navIn">
+                        <li class="nav"><a href="" class="navButton">ABOUT</a></li>
+                        <li class="nav"><a href="" class="navButton">RULEBOOK</a></li>
+                        <li class="nav"><a href="" class="navButton">SCHEDULE</a></li>
+                        <li class="nav"><a href="" class="navButton">DOWNLOAD</a></li>
+                        <li class="nav"><a href="" class="navButton">FAQ</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="hamburgerMenu">
+            <div class="openIcon"><img src="img/outline_menu_black_24dp.png" alt="Open"></div>
+            <div class="closeIcon"><img src="img/outline_close_black_24dp.png" alt="Close"></div>
+        </div>
+        <div class="height100"></div>
+        <footer>
+            <nav>
+                <ul class="navInFooter">
+                    <li class="nav"><a href="" class="navButton">ABOUT</a></li>
+                    <li class="nav"><a href="" class="navButton">RULEBOOK</a></li>
+                    <li class="nav"><a href="" class="navButton">SCHEDULE</a></li>
+                    <li class="nav"><a href="" class="navButton">DOWNLOAD</a></li>
+                    <li class="nav"><a href="" class="navButton">FAQ</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+<script src="js/hamburger.js"></script>
+</html>
